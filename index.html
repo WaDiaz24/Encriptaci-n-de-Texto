@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset-css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img class="logo" src="images/logo.png" alt="Logo Alura">
+            <h1>Encriptador de Texto</h1>
+        </div>
+    </header>
+    <main>
+        <section class="primera-seccion">
+            <textarea class="text-area" id="text-area" cols="30" rows="5" placeholder="Ingrese el texto aqui" autofocus></textarea>
+            <div class="parrafos">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button>Encriptar</button>
+                <button>Desencriptar</button>
+            </div>
+        </section>
+        <section class="segunda-seccion">
+            <textarea class="mensaje" id="mensaje" cols="30" rows="11" disabled></textarea>
+            <p class="parrafo1">Ningún mensaje fue encontrado</p>
+            <p class="parrafo2">Ingresa el texto que desees encriptar o desencriptar</p>
+            <div class="buttons">
+                <button class="btn-copiar" id="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <p>&copy Copyright by Andrés Diaz - 2023</p>
+    </footer>
+    <script src="logica.js"></script>
+</body>
+</html>
