@@ -1,0 +1,116 @@
+* {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+}
+body, main {
+    background: url(images/fondo-main.jpg);
+}
+header, .encabezado {
+    background: url(images/background-header.jpg);
+}
+.encabezado {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+.logo {
+    margin: 40px 0 40px 20px;
+    width: 60px;
+}
+h1 {
+    margin: 60px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+main {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+}
+.primera-seccion {
+    margin-left: 14px;
+}
+.text-area {
+    border: none;
+    border-radius: 24px;
+    color: #043871;
+    text-transform: lowercase;
+    margin-top: 40px;
+    padding: 20px;
+    resize: none;
+}
+.text-area:focus, .meensaje:focus {
+    outline: none;
+}
+.parrafos {
+    padding: 10px 0;
+}
+.segunda-seccion {
+    margin: 40px 14px 0 28px;
+}
+.mensaje {
+    background: #fff;
+    background-image: url(images/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    border: none;
+    border-radius: 24px;
+    color: #043871;
+    width: 270px;
+    padding: 40px;
+    margin-bottom: 20px;
+    resize: none;
+}
+.parrafos, .parrafo1, .parrafo2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.parrafo1, .parrafo2 {
+    position: absolute;
+    top: 520px;
+    padding-left: 20px;
+}
+.parrafo2 {
+    top: 560px;
+    width: 300px;
+}
+.buttons button {
+    font-size: 20px;
+    font-weight: bold;
+    
+    width: 200px;
+    height: 40px;
+    padding: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background: #45e88b;
+    cursor: pointer;
+}
+.buttons button:hover {
+    transform: scale(1.1);
+    background: #e8f049;
+}
+.btn-copiar {
+    position: absolute;
+    top: 590px;
+    margin-left: 20px;
+}
+.buttons .btn-copiar:hover {
+    background: #1fcbff;
+}
+.pie-pagina {
+    background: url(images/background-header.jpg);
+    text-align: center;
+    color: #fff;
+    height: 100px;
+}
+.pie-pagina p {
+    position: relative;
+    top: 60px;
+}
