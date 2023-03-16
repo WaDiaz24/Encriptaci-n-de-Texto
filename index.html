@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+    <title>Encriptador de Texto</title>
+    <link rel="icon" href="images/A.ico">
 </head>
 <body>
     <header>
@@ -25,8 +27,8 @@
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="buttons">
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
+                <button onclick="btnEncriptar()">Encriptar</button>
+                <button onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
         <section class="segunda-seccion">
@@ -34,7 +36,7 @@
             <p class="parrafo1">Ningún mensaje fue encontrado</p>
             <p class="parrafo2">Ingresa el texto que desees encriptar o desencriptar</p>
             <div class="buttons">
-                <button class="btn-copiar" id="btn-copiar">Copiar</button>
+                <button class="btn-copiar" id="btn-copiar" onclick="copiarTexto()">Copiar</button>
             </div>
         </section>
     </main>
