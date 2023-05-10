@@ -56,7 +56,7 @@ function desencriptar(textDesencriptada) {
 
 function btnDesencriptar() {
     if (cajaTexto.value == "") {
-        parrafo1.style.color = "red";
+        parrafoAviso.style.color = "red";
         swal ( "Ups","¡Ningún mensaje fue encontrado!","error");
     }
     else if (!validarTexto()) {
@@ -64,8 +64,8 @@ function btnDesencriptar() {
         mensaje.value = textoEncriptado;
         mensaje.style.backgroundImage = "none";
         cajaTexto.value = "";
-        parrafo1.style.display = "none";
-        parrafo2.style.display = "none";
+        parrafoAviso.style.display = "none";
+        parrafoMensaje.style.display = "none";
     }
 }
 
