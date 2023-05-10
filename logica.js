@@ -55,9 +55,18 @@ function desencriptar(textDesencriptada) {
 }
 
 function btnDesencriptar() {
-    const textoEncriptado = desencriptar(cajaTexto.value);
-    mensaje.value = textoEncriptado;
-    cajaTexto.value = "";
+    if (cajaTexto.value == "") {
+        parrafo1.style.color = "red";
+        swal ( "Ups","¡Ningún mensaje fue encontrado!","error");
+    }
+    else if (!validarTexto()) {
+        const textoEncriptado = desencriptar(cajaTexto.value);
+        mensaje.value = textoEncriptado;
+        mensaje.style.backgroundImage = "none";
+        cajaTexto.value = "";
+        parrafo1.style.display = "none";
+        parrafo2.style.display = "none";
+    }
 }
 
 function copiarTexto() {
